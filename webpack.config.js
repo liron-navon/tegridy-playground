@@ -8,8 +8,6 @@ const config = {
     output: {
         path: path.resolve('dist'),
         filename: `index.js`,
-        library: 'tegrity',
-        libraryTarget: 'umd'
     },
     devServer: {
         writeToDisk: true,
