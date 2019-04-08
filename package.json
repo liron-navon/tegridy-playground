@@ -1,0 +1,25 @@
+{
+  "name": "tegridy-playground",
+  "version": "0.0.1",
+  "description": "a place to play with tegridy",
+  "main": "src/index.jsx",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV=production webpack"
+  },
+  "author": "Liron Navon",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-tegridy-htm": "^1.0.1",
+    "babel-preset-tegridy-jsx": "^1.0.1",
+    "copy-webpack-plugin": "^5.0.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {}
+}
