@@ -1,12 +1,20 @@
-import Tegridy, {render} from 'tegridy'
+import Tegridy, {render, useState} from 'tegridy'
 
-const jsx = (
-    <div>
-        <h1 style={'color: green'}>hello tegridy</h1>
-        <p onClick={() => console.log('hello')}>just another javascript framework</p>
-    </div>
-);
+const MyFunctionalComponent = (props) => {
+    const [number, setState] = useState(1);
+
+    setTimeout(() => {
+        setState(number+1)
+    }, 1000);
+
+    return (
+        <div>
+            <h1 style={{color: 'green'}}>Hello {props.name} here is your number: {number}</h1>
+            <p className={'my-class'}>let's Code with tegridy</p>
+        </div>
+    )
+};
 
 const rootElement = document.querySelector('#root');
 
-render(jsx, rootElement);
+render(<MyFunctionalComponent name={'liron'}/>, rootElement);
